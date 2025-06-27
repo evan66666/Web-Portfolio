@@ -1,0 +1,128 @@
+/* Mencegah scroll horizontal akibat beberapa animasi */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Mengimpor Font dan Mendefinisikan Variabel */
+:root {
+    --bs-primary: #0D6EFD;
+    --bs-dark-blue: #0A2647;
+    --font-family-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    padding-top: 56px; /* Memberi ruang untuk navbar */
+    color: #495057;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-dark-blue);
+}
+
+/* Navbar */
+.navbar-brand {
+    color: var(--bs-dark-blue) !important;
+}
+.nav-link {
+    font-weight: 600;
+    color: #6C757D !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+/* Hero Section*/
+#hero {
+    background-color: #FFFFFF; /* Ganti latar menjadi putih solid */
+    min-height: 80vh; /* Pastikan section setinggi layar */
+    padding-top: 80px; /* Beri padding atas */
+}
+
+.hero-text {
+    color: var(--bs-dark-blue);
+    line-height: 1.3;
+}
+
+/* Kontainer untuk gambar blob dan foto */
+.hero-image-container {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 450px; /* Beri tinggi minimum agar blob terlihat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Foto profil di atas blob */
+.hero-photo {
+    width: 70%; /* Lebar foto sekitar 70% dari lebar blob */
+    max-width: 350px;
+    height: auto;
+}
+
+/* Penyesuaian untuk layar kecil (Mobile) */
+@media (max-width: 991.98px) {
+    #hero {
+        min-height: auto; /* Tinggi otomatis di mobile */
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .hero-image-container {
+        margin-top: 4rem; /* Beri jarak atas untuk gambar di mobile */
+    }
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* Judul Section dengan Garis Bawah */
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--bs-primary);
+    margin: 1rem auto 0;
+}
+#about h2::after {
+    margin: 1rem 0 0; /* Ratakan kiri untuk section "Tentang" */
+}
+
+/* Kartu Portofolio */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+.project-card .card-img-top {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bs-dark-blue) !important;
+}
+footer .social-icons a {
+    transition: color 0.3s ease;
+}
+footer .social-icons a:hover {
+    color: var(--bs-primary) !important;
+}
