@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus: MVP Desain Web Perusahaan B2B SKincare - Muhammad Evan Widad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (Gunakan file yang sama atau buat yang baru jika perlu) -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="text-gray-200">
+
+    <!-- The animated gradient background element -->
+    <div class="animated-gradient-bg"></div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card !rounded-none !border-x-0 !border-t-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Muhammad Evan Widad
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html#about" class="hover:text-white transition-colors duration-300">Tentang Saya</a>
+                <a href="index.html#frontend" class="hover:text-white transition-colors duration-300">Front-End</a>
+                <a href="index.html#uiux" class="hover:text-white transition-colors duration-300">UI/UX</a>
+                <a href="index.html#machine-learning" class="hover:text-white transition-colors duration-300">Machine Learning</a>
+                <a href="mailto:evanwidad999@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">Hubungi Saya</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html#about" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Tentang Saya</a>
+            <a href="index.html#frontend" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Front-End</a>
+            <a href="index.html#uiux" class="block py-2 px-6 text-sm hover:bg-gray-700/50">UI/UX</a>
+            <a href="index.html#machine-learning" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Machine Learning</a>
+            <a href="mailto:evanwidad999@gmail.com" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 relative z-10">
+
+        <!-- Case Study Header -->
+        <section id="case-study-header" class="text-center mb-16 reveal">
+            <a href="index.html" class="text-indigo-400 hover:text-indigo-300 transition-colors mb-4 inline-block">&larr; Kembali ke Portfolio</a>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                MVP Website B2B <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500">Skincare</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+                Meningkatkan Akuisisi Mitra Bisnis Melalui Desain yang Meyakinkan.
+            </p>
+        </section>
+
+        <!-- Project Overview -->
+        <section id="overview" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <img src="assets/images/UIUX-Studi1/Judul.png" alt="Tampilan Akhir Aplikasi" class="rounded-lg w-full mb-6">
+                <div class="grid md:grid-cols-4 gap-6 text-center md:text-left">
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Jenis Projek</h3>
+                        <p class="text-gray-400">Projek Tim (Studi Independen)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Peran Saya</h3>
+                        <p class="text-gray-400"> Web UI Designer, Web UX Designer</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Durasi Proyek</h3>
+                        <p class="text-gray-400">8 Minggu (Juni - Juli 2022)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Alat yang Digunakan</h3>
+                        <p class="text-gray-400">Figma, Trello, Zoom, Figjam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- The Challenge -->
+        <section id="challenge" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Tantangan</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Sebuah brand skincare premium memiliki produk yang sangat baik namun penjualannya masih sangat bergantung pada tim sales offline. Mereka tidak memiliki "wajah digital" yang mampu menarik calon mitra bisnis (reseller, klinik) secara online. Informasi produk tersebar dan tidak ada satu tempat pun bagi calon mitra untuk memahami keunggulan brand dan produk yang ditawarkan.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    Tujuan: Merancang landing page yang berfungsi sebagai "etalase digital" untuk membangun citra brand, menampilkan katalog produk, dan yang terpenting menghasilkan prospek dari calon mitra bisnis yang berkualitas dengan mempromosikan aplikasi Rave untuk melakukan transaksi sebagai reseller atau mitra.
+                </p>
+            </div>
+        </section>
+
+        <!-- My Process -->
+        <section id="process" class="mb-16 reveal">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Proses Desain Saya</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">🧐</div>
+                    <h3 class="font-semibold text-white">Riset</h3>
+                    <p class="text-xs text-gray-400">Memahami pengguna dan kompetitor.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">📝</div>
+                    <h3 class="font-semibold text-white">Definisi</h3>
+                    <p class="text-xs text-gray-400">Membuat persona dan problem statement.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">💡</div>
+                    <h3 class="font-semibold text-white">Ideasi</h3>
+                    <p class="text-xs text-gray-400">Wireframing dan user flow.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <h3 class="font-semibold text-white">Desain & Prototyping</h3>
+                    <p class="text-xs text-gray-400">Membuat desain hi-fi dan prototipe interaktif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wireframes -->
+        <section id="wireframes" class="mb-16 reveal">
+             <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Wireframes</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Setelah memahami masalah, saya membuat user flow untuk menyederhanakan proses transfer. Kemudian, saya membuat wireframe low-fidelity untuk fokus pada tata letak dan fungsionalitas sebelum masuk ke desain visual.
+                </p>
+                <img src="assets/images/UIUX-Studi1/wireframes.png" alt="Wireframes" class="rounded-lg w-full">
+            </div>
+        </section>
+
+        <!-- Visual Design -->
+        <section id="visual-design" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Prototipe Interaktif</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Saya menerapkan desain visual yang bersih, modern, dan mudah diakses. Palet warna ungu memberikan kesan girly dan penggunaan warna putih yang dominan tetap memberikan kesan profesional dan bersih, sementara tipografi yang jelas memastikan keterbacaan. Komponen interaktif dirancang untuk memberikan umpan balik yang jelas kepada pengguna.
+                </p>
+                <div class="w-full bg-black/20 rounded-lg p-2 shadow-inner">
+                    <div class="relative w-full overflow-hidden" style="padding-top: 75%;"> <!-- 4:3 Aspect Ratio, sesuaikan jika perlu -->
+                        <!--
+                            CARA MENGGANTI:
+                            1. Buka file Figma Anda.
+                            2. Klik tombol "Share" di kanan atas.
+                            3. Pergi ke tab "< > Embed".
+                            4. Salin kode <iframe> dan tempel di bawah ini, menggantikan <iframe> yang sudah ada.
+                        -->
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full rounded-md border-0"
+                            src="https://embed.figma.com/proto/Ssev7Bj3RVVlfGgQbTINjr/PM-x-UI-UX-16---Group-7?page-id=326%3A9179&node-id=581-11527&viewport=443%2C451%2C0.04&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=581%3A11527&embed-host=share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="text-center reveal">
+            <div class="glass-card max-w-3xl mx-auto p-8 md:p-12 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Hasil & Pembelajaran</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Setelah dilakukan user testing, landing page ini berhasil menrespon positif dari pengguna, pengguna yang menggunakan web ini merasa ini adalah web yang sangat informatif dan lengkap untuk dipakai sebagai media promosi aplikasi mobile dan juga sebagai katalog produk yang sangat detail.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    Pelajaran utama: Untuk landing page B2B, membangun kredibilitas melalui desain profesional dan alur informasi yang logis adalah kunci. Setiap bagian harus memiliki tujuan yang jelas untuk memandu pengunjung menuju satu aksi utama, yaitu mengarahkan untuk mengunduh aplikasi mobilenya.
+                </p>    
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2025 [Nama Anda]. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Gunakan file JS yang sama atau buat yang baru jika perlu -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

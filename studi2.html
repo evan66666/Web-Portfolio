@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus: Desain Web P2P Lending Crowde - Muhammad Evan Widad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (Gunakan file yang sama dari proyek Anda) -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="text-gray-200">
+
+    <!-- The animated gradient background element -->
+    <div class="animated-gradient-bg"></div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card !rounded-none !border-x-0 !border-t-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Muhammad Evan Widad
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html#about" class="hover:text-white transition-colors duration-300">Tentang Saya</a>
+                <a href="index.html#frontend" class="hover:text-white transition-colors duration-300">Front-End</a>
+                <a href="index.html#uiux" class="hover:text-white transition-colors duration-300">UI/UX</a>
+                <a href="index.html#machine-learning" class="hover:text-white transition-colors duration-300">Machine Learning</a>
+                <a href="mailto:evanwidad999@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">Hubungi Saya</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html#about" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Tentang Saya</a>
+            <a href="index.html#frontend" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Front-End</a>
+            <a href="index.html#uiux" class="block py-2 px-6 text-sm hover:bg-gray-700/50">UI/UX</a>
+            <a href="index.html#machine-learning" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Machine Learning</a>
+            <a href="mailto:evanwidad999@gmail.com" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 relative z-10">
+
+        <!-- Case Study Header -->
+        <section id="case-study-header" class="text-center mb-16 reveal">
+            <a href="index.html" class="text-indigo-400 hover:text-indigo-300 transition-colors mb-4 inline-block">&larr; Kembali ke Portfolio</a>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                Desain Web P2P Lending <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Crowde</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+                Membangun Kepercayaan dan Menyederhanakan Investasi Melalui Antarmuka yang Intuitif.
+            </p>
+        </section>
+
+        <!-- Project Overview -->
+        <section id="overview" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <img src="assets/images/UIUX-Studi2/crowde.png" alt="Tampilan Platform P2P Lending" class="rounded-lg w-full mb-6">
+                <div class="grid md:grid-cols-4 gap-6 text-center md:text-left">
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Jenis Projek</h3>
+                        <p class="text-gray-400">Projek Tim (Studi Independen)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Peran Saya</h3>
+                        <p class="text-gray-400">UI/UX Designer (Menu Pengajuan Pinjaman dan Proyek)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Durasi Proyek</h3>
+                        <p class="text-gray-400">8 Minggu (November - Desember 2022)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Alat yang Digunakan</h3>
+                        <p class="text-gray-400"Figma, Zoom, Figjam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- The Challenge -->
+        <section id="challenge" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Tantangan</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Platform Peer-to-Peer (P2P) lending sangat bergantung pada kepercayaan. Tantangan utamanya adalah merancang sebuah platform yang tidak hanya fungsional tetapi juga mampu meyakinkan dua kelompok pengguna yang berbeda: investor (pemberi pinjaman) dan UMKM (peminjam). Investor membutuhkan data yang jelas dan transparan untuk membuat keputusan, sementara peminjam membutuhkan proses pengajuan yang mudah dan tidak mengintimidasi.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    Tujuan: Merancang sebuah website yang membangun kredibilitas, menyajikan informasi investasi dan risiko secara gamblang, serta menyediakan alur yang mulus bagi investor untuk mendanai proyek dan bagi peminjam untuk mengajukan pinjaman.
+                </p>
+            </div>
+        </section>
+
+        <!-- My Process -->
+        <section id="process" class="mb-16 reveal">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Proses Desain Saya</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">🧐</div>
+                    <h3 class="font-semibold text-white">Riset</h3>
+                    <p class="text-xs text-gray-400">Memahami pengguna dan kompetitor.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">📝</div>
+                    <h3 class="font-semibold text-white">Definisi</h3>
+                    <p class="text-xs text-gray-400">Membuat persona dan problem statement.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">💡</div>
+                    <h3 class="font-semibold text-white">Ideasi</h3>
+                    <p class="text-xs text-gray-400">Wireframing dan user flow.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <h3 class="font-semibold text-white">Desain & Prototyping</h3>
+                    <p class="text-xs text-gray-400">Membuat desain hi-fi dan prototipe interaktif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solusi Desain -->
+        <section id="solusi-desain" class="mb-16 reveal">
+             <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Solusi Desain</h2>
+                <div class="space-y-16"> <!-- Container for vertical stacking -->
+
+                    <!-- Solusi 1: Marketplace Proyek yang Transparan -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+                        <div class="md:w-1/2">
+                            <img src="assets/images/UIUX-Studi2/Solusi1.png" alt="Solusi 1: Marketplace Proyek" class="rounded-lg w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-semibold text-white mb-3">1. Dasbor Petani</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Menampilkan ringkasan portofolio, imbal hasil, dan daftar proyek pertanian yang bisa diupdate dengan mudah untuk memberikan kepercayaan lebih pada investor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Solusi 2: Analisis Risiko & Detail Proyek -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 text-center md:text-left">
+                        <div class="md:w-1/2">
+                            <img src="assets/images/UIUX-Studi2/Solusi2.png" alt="Solusi 2: Analisis Risiko" class="rounded-lg w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-semibold text-white mb-3">2. Halaman Pengajuan untuk Petani</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Formulir sederhana dengan instruksi langkah-demi-langkah yang jelas disertai ilustrasi contoh, meminimalkan kebingungan saat proses pengajuan modal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Solusi 3: Alur Pengajuan Pinjaman yang Disederhanakan -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+                        <div class="md:w-1/2">
+                            <img src="assets/images/UIUX-Studi2/Solusi3.png" alt="Solusi 3: Alur Pengajuan" class="rounded-lg w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-semibold text-white mb-3">3. Halaman Pengajuan Proyek Petani</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Halaman ini berfungsi untuk mengupdate progress pertanian secara berkala agar investor bisa dengan mudah melihat progress yang sedang terjadi.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Design & Figma Embed -->
+        <section id="visual-design" class="mb-16 reveal">
+            <div class="glass-card p-8 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Prototipe Interaktif</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Desain visual menggunakan palet warna jingga yang merupakan warna identitas dari brand Crowde. Berikut merupakan alur pengajuan dan manajemen proyek yang merupakan bagian saya.
+                </p>
+                
+                <!-- Figma Embed Container -->
+                <div class="w-full bg-black/20 rounded-lg p-2 shadow-inner">
+                    <div class="relative w-full overflow-hidden" style="padding-top: 75%;"> <!-- 4:3 Aspect Ratio, sesuaikan jika perlu -->
+                        <!--
+                            GANTI DENGAN KODE EMBED FIGMA ANDA UNTUK PROYEK CROWDE
+                        -->
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full rounded-md border-0"
+                            src="https://embed.figma.com/proto/uxggazNPUCu6XiS9q7WXJ2/Crowde-110?page-id=17%3A1001&node-id=367-3972&viewport=339%2C-24%2C0.13&scaling=scale-down&content-scaling=fixed&starting-point-node-id=367%3A3972&show-proto-sidebar=1&embed-host=share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="text-center reveal">
+            <div class="glass-card max-w-3xl mx-auto p-8 md:p-12 rounded-2xl">
+                <h2 class="text-3xl font-bold text-white mb-4">Hasil & Pembelajaran</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Prototype ini diuji ke petani muda dan beberapa petani tradisional dan hasilnya untuk petani muda bisa dengan mudah menggunakannya namun untuk petani tradisional masih perlu sedikit arahan dari orang lain untuk menggunakannya pertama kali. Tingkat adopsi di kalangan petani juga cukup baik berkat pendekatan desain yang sederhana.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    Pelajaran terbesar adalah pentingnya empati mendalam saat mendesain untuk audiens yang beragam. Apa yang berhasil untuk investor tech-savvy belum tentu berhasil untuk petani. Riset dan pengujian berkelanjutan adalah kunci untuk menjembatani perbedaan tersebut.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2025 Muhammad Evan Widad. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Gunakan file JS yang sama dari proyek Anda -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

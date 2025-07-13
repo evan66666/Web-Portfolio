@@ -1,0 +1,70 @@
+/* Set default font */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0c0a18; /* Dark purple-blue background */
+}
+
+/* --- Glassmorphism Card Style --- */
+.glass-card {
+    background: rgba(22, 19, 44, 0.5); /* Semi-transparent dark background */
+    -webkit-backdrop-filter: blur(20px); /* Frosted glass effect for Safari */
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                background 0.3s ease, 
+                border 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(22, 19, 44, 0.7);
+}
+
+/* --- Animated Gradient Background --- */
+.animated-gradient-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(315deg, #4f46e5, #d946ef, #14b8a6, #f59e0b);
+    background-size: 400% 400%;
+    animation: gradient-animation 20s ease infinite;
+    filter: blur(100px); /* Soft blur effect */
+    opacity: 0.4;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --- Scroll-triggered Animations --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0c0a18;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

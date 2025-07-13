@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Evan Widad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="text-gray-200">
+
+    <!-- The animated gradient background element -->
+    <div class="animated-gradient-bg"></div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card !rounded-none !border-x-0 !border-t-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Muhammad Evan Widad
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html#about" class="hover:text-white transition-colors duration-300">Tentang Saya</a>
+                <a href="index.html#frontend" class="hover:text-white transition-colors duration-300">Front-End</a>
+                <a href="index.html#uiux" class="hover:text-white transition-colors duration-300">UI/UX</a>
+                <a href="index.html#machine-learning" class="hover:text-white transition-colors duration-300">Machine Learning</a>
+                <a href="mailto:evanwidad999@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">Hubungi Saya</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html#about" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Tentang Saya</a>
+            <a href="index.html#frontend" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Front-End</a>
+            <a href="index.html#uiux" class="block py-2 px-6 text-sm hover:bg-gray-700/50">UI/UX</a>
+            <a href="index.html#machine-learning" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Machine Learning</a>
+            <a href="mailto:evanwidad999@gmail.com" class="block py-2 px-6 text-sm hover:bg-gray-700/50">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 relative z-10">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center min-h-[70vh] flex flex-col justify-center items-center">
+            <div class="parallax-container w-full">
+                <div class="glass-card p-8 md:p-12 rounded-2xl parallax-element" data-speed="2">
+                    <img src="assets/images/profil.png" alt="Foto Profil Anda" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-indigo-500/50 shadow-lg reveal">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 reveal" style="transition-delay: 100ms;">
+                        Menciptakan <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500">Pengalaman Digital</span> yang Berkesan
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300 mb-8 reveal" style="transition-delay: 200ms;">
+                        Seorang IT Enthusiast dengan ketertarikan mendalam pada Front-End Development, Desain UI/UX, dan Lainnya, siap untuk membangun produk yang fungsional dan dicintai pengguna.
+                    </p>
+                    <div class="reveal" style="transition-delay: 300ms;">
+                        <a href="#frontend" class="bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-fuchsia-500/50 transform hover:scale-105">
+                            Lihat Karya Saya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2 reveal">
+                    <div class="glass-card p-8 rounded-2xl aspect-square flex items-center justify-center">
+                         <img src="assets/images/logo.png" alt="Logo atau Ilustrasi" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div class="md:col-span-3 reveal" style="transition-delay: 150ms;">
+                    <h2 class="text-3xl font-bold text-white mb-4">Tentang Saya</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Halo! Saya Muhammad Evan Widad, seorang Fresh Graduate IT  dari Universitas Negeri Semarang yang berfokus pada titik temu antara desain dan pengembangan. Saya percaya bahwa produk digital terbaik lahir dari sinergi antara kode yang efisien dan desain yang intuitif.
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Dengan kemampuan di bidang Front-End dan pemahaman mendalam tentang prinsip-prinsip UI/UX, tujuan saya adalah menerjemahkan ide-ide kompleks menjadi antarmuka yang elegan, responsif, dan mudah digunakan.
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Saya memiliki hobi merakit PC, melakukan problem solving, dan belajar teknologi baru serta selalu mencari cara untuk meningkatkan keterampilan saya. Saya percaya bahwa setiap proyek adalah kesempatan untuk belajar dan berinovasi.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-gray-700/50 text-cyan-400 text-sm font-medium px-4 py-2 rounded-full">HTML & CSS</span>
+                        <span class="bg-gray-700/50 text-yellow-400 text-sm font-medium px-4 py-2 rounded-full">JavaScript</span>
+                        <span class="bg-gray-700/50 text-sky-400 text-sm font-medium px-4 py-2 rounded-full">Tailwind CSS</span>
+                        <span class="bg-gray-700/50 text-blue-400 text-sm font-medium px-4 py-2 rounded-full">Git</span>
+                        <span class="bg-gray-700/50 text-fuchsia-400 text-sm font-medium px-4 py-2 rounded-full">Figma</span>
+                        <span class="bg-gray-700/50 text-green-400 text-sm font-medium px-4 py-2 rounded-full">Hardware Troubleshoot</span>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Front-End Projects -->
+        <section id="frontend" class="py-24">
+            <h2 class="text-3xl font-bold text-white text-center mb-12 reveal">Front-End</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="glass-card p-6 rounded-2xl reveal">
+                    <img src="assets/images/Mietra.png" alt="Gambar Proyek Front-End 1" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Web Perusahaan Carton Box</h3>
+                    <p class="text-gray-400 text-sm mb-4">Membangun website statis dan responsif untuk tujuan branding perusahaan B2B yang bergerak di bidang produksi carton box menggunakan html, tailwind css, javascript.</p>
+                    <a href="https://mietrawijayabox.com/" class="font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">Lihat Proyek &rarr;</a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="glass-card p-6 rounded-2xl reveal" style="transition-delay: 150ms;">
+                    <img src="assets/images/logo.png" alt="Gambar Proyek Front-End 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Web Portfolio Pribadi</h3>
+                    <p class="text-gray-400 text-sm mb-4">Membangun website portfolio pribadi untuk menampilkan karya dan pengalaman saya sebagai Front-End Developer.</p>
+                    <a href="https://portfolioevan.vercel.app/" class="font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">Lihat Proyek &rarr;</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- UI/UX Projects -->
+        <section id="uiux" class="py-24">
+            <h2 class="text-3xl font-bold text-white text-center mb-12 reveal">UI/UX</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- UI/UX Card 1 -->
+                <div class="glass-card rounded-2xl flex flex-col md:flex-row items-center p-6 gap-6 reveal">
+                    <img src="assets/images/rave.png" alt="Gambar Proyek UI/UX 1" class="rounded-lg w-full md:w-1/3 h-auto object-cover">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-white mb-2">MVP Web B2B Skincare</h3>
+                        <p class="text-gray-400 text-sm mb-4">Merancang landing page dan katalog produk untuk menarik minat serta akuisisi mitra bisnis baru.</p>
+                        <a href="studi1.html" class="font-semibold text-fuchsia-400 hover:text-fuchsia-300 transition-colors">Lihat Studi Kasus &rarr;</a>
+                    </div>
+                </div>
+                <!-- UI/UX Card 2 -->
+                <div class="glass-card rounded-2xl flex flex-col md:flex-row items-center p-6 gap-6 reveal" style="transition-delay: 150ms;">
+                    <img src="assets/images/crowde.png" alt="Gambar Proyek UI/UX 2" class="rounded-lg w-full md:w-1/3 h-auto object-cover">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-white mb-2">Website P2P Lending Crowde</h3>
+                        <p class="text-gray-400 text-sm mb-4">Membangun platform yang menghubungkan investor dengan petani yang membutuhkan modal usaha.</p>
+                        <a href="studi2.html" class="font-semibold text-fuchsia-400 hover:text-fuchsia-300 transition-colors">Lihat Studi Kasus &rarr;</a>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl flex flex-col md:flex-row items-center p-6 gap-6 reveal" style="transition-delay: 300ms;">
+                    <img src="assets/images/YukPrivate.png" alt="Gambar Proyek UI/UX 3" class="rounded-lg w-full md:w-1/3 h-auto object-cover">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-white mb-2">Platform Booking Les Privat</h3>
+                        <p class="text-gray-400 text-sm mb-4">Merancang platform untuk mempertemukan siswa dan orang tua dengan tentor les privat terverifikasi di daerahmu.</p>
+                        <a href="studi3.html" class="font-semibold text-fuchsia-400 hover:text-fuchsia-300 transition-colors">Lihat Studi Kasus &rarr;</a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Machine Learning Projects -->
+        <section id="machine-learning" class="py-24">
+            <h2 class="text-3xl font-bold text-white text-center mb-12 reveal">Machine Learning</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="glass-card p-6 rounded-2xl reveal">
+                    <img src="assets/images/pneumonia.png" alt="Gambar Proyek Machine Learning 1" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Deteksi Penyakit Pneumonia</h3>
+                    <p class="text-gray-400 text-sm mb-4">Membangun model klasifikasi citra menggunakan CNN EfficientNetB0 untuk mengkategorikan citra x-ray menjadi pneumonia atau tidak.</p>
+                    <a href="#" class="font-semibold text-orange-400 hover:text-orange-300 transition-colors">Lihat di GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <div class="glass-card max-w-3xl mx-auto text-center p-8 md:p-12 rounded-2xl reveal">
+                <h2 class="text-3xl font-bold text-white mb-4">Mari Berkolaborasi</h2>
+                <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+                    Saya selalu terbuka untuk diskusi mengenai proyek baru, peluang kerja, atau sekadar berbagi ide. Jangan ragu untuk menghubungi saya.
+                </p>
+                <a href="mailto:evanwidad999@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-indigo-500/50 transform hover:scale-105">
+                    Kirim Email
+                </a>
+                <div class="mt-8 flex justify-center space-x-6">
+                    <a href="https://github.com/evan66666" class="text-gray-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.735 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg></a>
+                    <a href="https://www.linkedin.com/in/muhammad-evan-widad-974935219/" class="text-gray-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.038c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10 0-5.523-4.478-10-10-10zm4.03 15.152h-2.14v-4.6c0-1.097-.02-2.507-1.527-2.507-1.53 0-1.765 1.195-1.765 2.427v4.68h-2.14V9.03h2.05v.94h.03c.285-.54 1.01-1.112 2.023-1.112 2.165 0 2.564 1.424 2.564 3.276v3.718zM6.938 7.998c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm1.07 8.184H5.868V9.03h2.14v7.152z"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2025 Muhammad Evan Widad. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
